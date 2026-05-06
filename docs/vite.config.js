@@ -1,11 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: mode === 'production' ? '/ra2581392523028/' : '/',
-  build: {
-    outDir: '.',
-    emptyOutDir: false,
-  }
-}))
+  base: "/ra2581392523013/",
+});
