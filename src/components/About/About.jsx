@@ -44,7 +44,7 @@ export default function About() {
 
   {/* ✏️ ADICIONE ISSO — sua foto */}
   <img
-    src="/rafaelmelos.png"        // coloque foto.jpg na pasta public/
+    src={`${import.meta.env.BASE_URL}rafaelmelos.png`}          // coloque foto.jpg na pasta public/
     alt="Rafael Melo"
     style={{
       width: "100%",
