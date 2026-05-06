@@ -1,0 +1,126 @@
+/* ================================================================
+   Hero.module.css
+   ================================================================ */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 130px 24px 80px;
+}
+
+/* ── BADGE ──────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 40px;
+  border: 1px solid var(--border-accent);
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+}
+
+.badgeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.5); }
+  50%       { opacity: 0.6; box-shadow: 0 0 0 5px rgba(249, 115, 22, 0); }
+}
+
+/* ── NOME ───────────────────────────────────────────────────── */
+/* ✏️ Mude o tamanho da fonte aqui */
+.name {
+  font-family: var(--font-pixel);
+  font-size: clamp(32px, 7vw, 64px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.nameDim {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nameAccent {
+  color: var(--accent);
+}
+
+/* ── SUBTÍTULO ──────────────────────────────────────────────── */
+.sub {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 44px;
+  letter-spacing: 0.04em;
+}
+
+.sub strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ── BOTÕES ─────────────────────────────────────────────────── */
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+}
+
+/* ── STATS ──────────────────────────────────────────────────── */
+.stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNum {
+  font-family: var(--font-pixel);
+  font-size: 20px;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── RESPONSIVO ─────────────────────────────────────────────── */
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .card {
+    padding: 16px 10px;
+    min-height: 85px;
+  }
+  .cardIcon { width: 32px; height: 32px; }
+  .cardName { font-size: 10px; }
+}
+

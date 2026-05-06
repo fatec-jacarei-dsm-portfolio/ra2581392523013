@@ -1,0 +1,135 @@
+/* ================================================================
+   Skills.module.css — Grade de ícones estilo da imagem de referência
+   ================================================================ */
+
+.section {
+  padding: var(--section-gap) 24px;
+}
+
+/* ── GRUPOS ─────────────────────────────────────────────────── */
+.group {
+  margin-bottom: 48px;
+}
+
+.groupTitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── GRADE DE CARDS ─────────────────────────────────────────── */
+/* ✏️ EDITE minmax(120px) para mudar o tamanho dos cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+/* ── CARD INDIVIDUAL ────────────────────────────────────────── */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  cursor: default;
+  transition: all 0.22s ease;
+  min-height: 110px;
+}
+
+.card:hover {
+  border-color: var(--border-accent);
+  background: var(--bg-card);
+  transform: translateY(-3px);
+}
+
+/* ── ÍCONE ──────────────────────────────────────────────────── */
+/* ✏️ EDITE o tamanho do ícone aqui */
+.cardIcon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.2s;
+}
+
+.card:hover .cardIcon {
+  filter: grayscale(0%) drop-shadow(0 0 6px rgba(249, 115, 22, 0.3));
+}
+
+/* Fallback inicial */
+.iconFallback {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-family: var(--font-pixel);
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* ── NOME DA SKILL ──────────────────────────────────────────── */
+.cardName {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.card:hover .cardName {
+  color: var(--text-primary);
+}
+
+/* ── CERTIFICAÇÕES ──────────────────────────────────────────── */
+.certs {
+  margin-top: 12px;
+}
+
+.certTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.certTag {
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-accent);
+  background: var(--accent-dim);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+}
+
+.certTag:hover {
+  background: rgba(249, 115, 22, 0.2);
+}
+
+/* ── RESPONSIVO ─────────────────────────────────────────────── */
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .card {
+    padding: 16px 10px;
+    min-height: 85px;
+  }
+  .cardIcon { width: 32px; height: 32px; }
+  .cardName { font-size: 10px; }
+}

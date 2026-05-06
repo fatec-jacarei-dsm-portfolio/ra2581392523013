@@ -1,0 +1,99 @@
+/* Contact.module.css */
+
+.section {
+  padding: var(--section-gap) 24px;
+}
+
+.box {
+  padding: 60px 52px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: var(--font-pixel);
+  font-size: clamp(18px, 4vw, 28px);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--accent);
+  line-height: 1.3;
+}
+
+.sub {
+  color: var(--text-secondary);
+  font-size: 15px;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* ── BOTÃO DE E-MAIL ────────────────────────────────────────── */
+.emailBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  cursor: pointer;
+  margin-bottom: 32px;
+  font-family: var(--font-mono);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.emailBtn:hover {
+  border-color: var(--border-accent);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.emailText {
+  font-size: 14px;
+  color: var(--text-primary);
+  letter-spacing: 0.03em;
+}
+
+.copyLabel {
+  font-size: 11px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  letter-spacing: 0.08em;
+}
+
+.copied {
+  color: var(--accent);
+}
+
+/* ── BOTÕES SOCIAIS ─────────────────────────────────────────── */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── RESPONSIVO ─────────────────────────────────────────────── */
+@media (max-width: 560px) {
+  .box { padding: 36px 24px; }
+
+  /* Corrige o botão de email no mobile */
+  .emailBtn {
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .emailText {
+    font-size: 11px;   /* diminui fonte do email */
+    word-break: break-all;
+  }
+
+  .copyLabel {
+    font-size: 10px;
+  }
+}
