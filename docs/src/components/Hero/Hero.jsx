@@ -42,9 +42,9 @@ export default function Hero() {
             &gt; VER PROJETOS
           </a>
           {/* 🗂️ Coloque curriculo.pdf na pasta public/ do projeto */}
-          <a href="/Rafael.pdf" download className="btn">
-            ↓ BAIXAR CURRÍCULO
-          </a>
+          <a href="./Rafael.pdf" download className="btn btn-accent">
+              ↓ CURRÍCULO PDF
+            </a>
         </div>
 
         {/* ── STATS INFERIORES ─────────────────────────────────── */}

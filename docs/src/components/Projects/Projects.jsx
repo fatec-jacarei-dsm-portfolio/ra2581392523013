@@ -13,9 +13,9 @@ export default function Projects() {
     <section id="projetos" className={styles.section}>
       <div className="container">
 
-        <p className="section-label">[ 03 — PROJETOS ]</p>
+        <p className="section-label">[ 03 — PROJETOS ACADÊMICOS ]</p>
         {/* ✏️ EDITE — título e subtítulo */}
-        <h2 className="section-title">Projetos</h2>
+        <h2 className="section-title">Projetos Acadêmicos</h2>
         <p className="section-sub">
           Projetos desenvolvidos durante minha trajetória — cada um
           representa um aprendizado real.
