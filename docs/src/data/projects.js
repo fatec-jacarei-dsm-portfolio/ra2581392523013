@@ -7,7 +7,7 @@ export const projects = [
   {
     id: 1,
     featured: true,          // aparece com badge "DESTAQUE"
-    title: "AgriRS Lab — INPE",
+    title: "AgriRS Lab — INPE - 1 Semestre",
     description:
       "Website institucional para o laboratório AgriRS Lab do Instituto Nacional de Pesquisas Espaciais. Atuei como desenvolvedor front-end, criando protótipos, organizando sprints e participando ativamente do desenvolvimento com metodologia Scrum.",
     tags: ["React", "HTML", "CSS", "Scrum", "Prototipação"],
