@@ -24,8 +24,8 @@ export const projects = [
   {
      id: 2,
      featured: true,
-     title: "Conecta Fatec Jacareí",
-     description: "Projeto acadêmico desenvolvido em equipe para a Fatec Jacareí. A aplicação oferece um sistema de autoatendimento com chatbot guiado, permitindo que alunos consultem informações sobre horários, calendário acadêmico, estágio, disciplinas e outros assuntos da secretaria. O projeto utiliza React, TypeScript, Node.js, Express, PostgreSQL e Docker.",
+     title: "Conecta Fatec Jacareí - 2 Semestre",
+     description: "Projeto acadêmico desenvolvido em equipe para a Fatec Jacareí. Atuei no desenvolvimento de funcionalidades de gerenciamento de usuários, controle de documentos, visualização de evidências documentais e monitoramento de logs, além da modelagem de processos por meio de diagramas de sequência. O projeto foi desenvolvido com React, TypeScript, Node.js, Express, PostgreSQL e Docker.",
      tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Docker"],
      role: "Full Stack Developer",
      period: "2026",

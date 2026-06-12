@@ -45,18 +45,6 @@ export default function Contact() {
             Me manda uma mensagem!
           </p>
 
-          {/* ── E-MAIL COM COPIAR ─────────────────────────────── */}
-          <button
-            className={styles.emailBtn}
-            onClick={handleCopyEmail}
-            title="Clique para copiar"
-          >
-            <span className={styles.emailText}>{EMAIL}</span>
-            <span className={`${styles.copyLabel} ${copied ? styles.copied : ""}`}>
-              {copied ? "✓ copiado!" : "[ copiar ]"}
-            </span>
-          </button>
-
           {/* ── BOTÕES SOCIAIS ────────────────────────────────── */}
           <div className={styles.socials}>
             {socials.map((s) => (
